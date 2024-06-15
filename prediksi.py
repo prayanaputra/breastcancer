@@ -1,10 +1,8 @@
-# prompt: front end tampilan untuk model
-
-import pickle
+import joblib
 import streamlit as st
 
 # Load the model
-model = pickle.load(open('kankerpayudara.sav', 'rb'))
+model = joblib.load('kankerpayudara.sav')
 
 # Define the front end interface
 st.title('Breast Cancer Prediction')
